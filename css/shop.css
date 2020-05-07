@@ -4,24 +4,56 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* impostazioni parteprincipale */
 main {
   margin: 2% auto;
-  background-color: red;
-  width: 40%;
+  width: 50%;
 }
-.megablocco {
-  background-color: green;
-  height: 250px;
-}
+/* impostazioni megablocco */
 .megablocco:last-child {
   position: relative;
-  top:15px;
+  top:20px;
 }
 .megablocco > div {
   display: inline-block;
 }
+/* impostazioni blocchi */
 .blocco {
-  background-color: grey;
-  height: 250px;
-  width: 199.5px;
+  background-color: rgb(228, 237, 237);
+  height: 300px;
+  width: 250px;
+  position: relative;
+}
+/* impostazione blocco sconto */
+.sconto {
+  position: absolute;
+  right: 0;
+  background-color: green;
+  height: 15px;
+  width: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+.sconto.sconto1{
+  background-color: red;
+}
+/* impostazione blocco immagini */
+.immagini {
+  height: 220px;
+  width: 220px;
+  position: absolute;
+  top: 40px;
+  left: 15px;
+}
+/* impostazione blocco cuore */
+.cuore{
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: 119px;
+  bottom: 15px;
+  display: none;
+}
+.blocco:hover .cuore{
+  display: block;
 }
