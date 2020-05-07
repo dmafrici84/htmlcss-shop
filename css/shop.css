@@ -1,0 +1,27 @@
+/* impostazioni generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  margin: 2% auto;
+  background-color: red;
+  width: 40%;
+}
+.megablocco {
+  background-color: green;
+  height: 250px;
+}
+.megablocco:last-child {
+  position: relative;
+  top:15px;
+}
+.megablocco > div {
+  display: inline-block;
+}
+.blocco {
+  background-color: grey;
+  height: 250px;
+  width: 199.5px;
+}
