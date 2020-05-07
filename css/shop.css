@@ -9,16 +9,16 @@ main {
   margin: 2% auto;
   width: 50%;
 }
-/* impostazioni megablocco */
-.megablocco:last-child {
+/* impostazioni riga */
+.riga:last-child {
   position: relative;
   top:20px;
 }
-.megablocco > div {
+.riga > div {
   display: inline-block;
 }
-/* impostazioni blocchi */
-.blocco {
+/* impostazioni rettangoli interni alla riga */
+.rettangolo {
   background-color: rgb(228, 237, 237);
   height: 300px;
   width: 250px;
@@ -38,10 +38,10 @@ main {
   background-color: red;
 }
 /* impostazione blocco immagini */
-.immagini {
+.immaginivendita {
   height: 220px;
   width: 220px;
-  position: absolute;
+  position: relative;
   top: 40px;
   left: 15px;
 }
@@ -49,11 +49,11 @@ main {
 .cuore{
   height: 12px;
   width: 12px;
-  position: absolute;
+  position: relative;
   left: 119px;
-  bottom: 15px;
+  top: 50px;
   display: none;
 }
-.blocco:hover .cuore{
+.rettangolo:hover .cuore{
   display: block;
 }
